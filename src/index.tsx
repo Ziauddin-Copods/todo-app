@@ -4,9 +4,30 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {
+  ChakraProvider,
+  ColorModeScript,
+  extendTheme,
+  ThemeConfig,
+} from '@chakra-ui/react';
+
+import TodosContextProvider from './context/todo-context';
+
+const config: ThemeConfig = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config });
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TodosContextProvider>
+      <ChakraProvider theme={theme}>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <App />
+      </ChakraProvider>
+    </TodosContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
