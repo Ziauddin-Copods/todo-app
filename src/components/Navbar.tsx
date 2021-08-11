@@ -37,7 +37,7 @@ function Navbar() {
         <Spacer />
         <IconButton
           aria-label='Toogle Theme'
-          icon={<FaSun />}
+          icon={colorMode === 'light' ? <FaSun /> : <FaMoon />}
           isRound={true}
           onClick={toggleColorMode}
         />
