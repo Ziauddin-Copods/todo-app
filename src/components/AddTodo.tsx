@@ -2,9 +2,9 @@ import React, { useContext, useRef } from 'react';
 
 import { TodosContext } from '../context/todo-context';
 
-import { Button, HStack, Input, toast, useToast } from '@chakra-ui/react';
+import { Button, HStack, Input, useToast } from '@chakra-ui/react';
 
-const AddTodo: React.FC = () => {
+const AddTodo: React.FC = (props) => {
   const todoCtx = useContext(TodosContext);
   const todoTextInputRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
