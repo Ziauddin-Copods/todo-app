@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import TodoList from './components/TodoList';
 import AddTodo from './components/AddTodo';
 import Charts from './components/charts/Charts';
+import GraphComponent from './components/graph/GraphComponent';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TodoList />
       <AddTodo />
       <Charts />
+      <GraphComponent />
     </VStack>
   );
 }

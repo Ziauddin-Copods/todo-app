@@ -1,14 +1,4 @@
-import Reacr from 'react';
-import {
-  Box,
-  Center,
-  Container,
-  Grid,
-  GridItem,
-  HStack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
+import { Container, HStack, Text } from '@chakra-ui/react';
 import AreaChartComponent from './AreaChartComponent';
 import RadalChartComponent from './RadalChartComponent';
 import BarChartComponent from './BarChartComponent';
@@ -25,7 +15,7 @@ const Charts = () => {
           bgGradient='Linear(to-r, green.300, green.400, green.500)'
           bgClip='text'
         >
-          Charts
+          Recharts
         </Text>
       </Container>
       <HStack width='100%'>

@@ -56,7 +56,6 @@ function AreaChartComponent() {
     },
   ];
 
-  console.log(data);
   return (
     <ResponsiveContainer width='100%' aspect={3}>
       <AreaChart

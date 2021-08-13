@@ -4,7 +4,6 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis,
   ResponsiveContainer,
 } from 'recharts';
 
@@ -17,7 +16,7 @@ function RadalChartComponent() {
       fullMark: 150,
     },
     {
-      subject: 'Chinese',
+      subject: 'Hindi',
       A: 98,
       B: 130,
       fullMark: 150,
@@ -53,9 +52,8 @@ function RadalChartComponent() {
       <RadarChart cx='50%' cy='50%' outerRadius='80%' data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey='subject' />
-        <PolarRadiusAxis />
         <Radar
-          name='Mike'
+          name='Zia'
           dataKey='A'
           stroke='#8884d8'
           fill='#8884d8'
