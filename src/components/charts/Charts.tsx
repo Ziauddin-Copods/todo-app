@@ -1,4 +1,4 @@
-import { Container, HStack, Text } from '@chakra-ui/react';
+import { Container, HStack, Text, Flex, Spacer, Box } from '@chakra-ui/react';
 import AreaChartComponent from './AreaChartComponent';
 import RadalChartComponent from './RadalChartComponent';
 import BarChartComponent from './BarChartComponent';
@@ -18,16 +18,44 @@ const Charts = () => {
           Recharts
         </Text>
       </Container>
-      <HStack width='100%'>
+      <Flex
+        w='100%'
+        h='auto'
+        align='center'
+        direction={['column', 'column', 'row', 'row']}
+      >
+        <Box w={['90%', '80%', '50%', '50%']}>
+          <AreaChartComponent />
+        </Box>
+        <Box w={['90%', '80%', '50%', '50%']}>
+          <RadalChartComponent />
+        </Box>
+      </Flex>
+      {/* <HStack width='100%'>
         <AreaChartComponent />
         <RadalChartComponent />
-      </HStack>
-      <br />
-      <br />
-      <HStack width='100%'>
+      </HStack> */}
+      {/* <br />
+      <br /> */}
+
+      <Flex
+        w={['100%', '90%', '90%', '99%']}
+        h='auto'
+        align='center'
+        direction={['column', 'column', 'row', 'row']}
+        overflowX='hidden'
+      >
+        <Box w={['90%', '80%', '50%', '50%']}>
+          <BarChartComponent />
+        </Box>
+        <Box w={['90%', '80%', '50%', '50%']}>
+          <LineChartComponent />
+        </Box>
+      </Flex>
+      {/* <HStack width='100%'>
         <BarChartComponent />
         <LineChartComponent />
-      </HStack>
+      </HStack> */}
     </>
   );
 };

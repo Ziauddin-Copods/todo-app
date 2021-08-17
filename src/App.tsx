@@ -10,7 +10,7 @@ import GraphComponent from './components/graph/GraphComponent';
 
 function App() {
   return (
-    <VStack>
+    <VStack align='center' justify='center'>
       <Navbar />
       <TodoList />
       <AddTodo />
